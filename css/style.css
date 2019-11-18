@@ -1,0 +1,135 @@
+/* TODO: Add images to search bar ?? */
+
+body {
+  position: absolute;
+  top: 0;
+  height: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.container {
+  display: grid;
+  grid-template-areas: "header header"
+                       "main main"
+                       "footer footer";
+  grid-template-rows: 25vh 35vh 25vh;
+  grid-template-columns: 1fr 2fr;
+}
+
+header {
+  grid-area: header;
+  border-bottom: 1px solid black;
+}
+
+.top-right {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 10px;
+  position: relative;
+  top: 15px;
+}
+
+nav {
+  position: relative;
+  right: 725px;
+  top: 10px;
+}
+
+nav a {
+  display: inline;
+  float: left;
+  font-size: 15px;
+}
+
+#all {
+  color: blue;
+  border-bottom: 5px solid blue;
+  padding-bottom: 5px;
+}
+
+a {
+  padding: 20px 15px 10px 5px;
+  font-weight: 500;
+  font-size: 12px;
+  font-family: "sans-serif";
+  text-decoration: none;
+  color: rgb(66, 66, 66);
+}
+
+.top-right #user_pic {
+  position: relative;
+  bottom: 8px;
+}
+
+a:hover
+{
+  text-decoration: underline;
+}
+
+.main {
+  width: 400px;
+  position: relative;
+  margin: 0 auto;
+  grid-area: main;
+}
+
+#user_pic {
+  border-radius: 25px;
+}
+
+#search-bar {
+  display: inline;
+  float: left;
+  position: relative;
+  top: -35px;
+  border: 1px solid rgb(231, 231, 231);
+  width: 700px;
+  margin-left: 20px;
+  padding: 15px;
+  border-radius: 35px;
+  font-size: 20px;
+  color: black;
+}
+
+#search-bar:hover {
+  box-shadow: 1px -1px 4px rgb(228, 228, 228);
+}
+
+#search-bar:focus {
+  outline-width: 0; /* gets rid of outline when clicked */
+}
+
+#logo {
+  display: inline-block;
+  float: left;
+  margin-left: 25px;
+  position: relative;
+  top: -30px;
+}
+
+footer {
+  margin-top: -45px;
+  padding: 25px 0px;
+  border-top: 1px solid rgb(230, 230, 230);
+  overflow-x: hidden;
+  overflow-y: hidden;
+  background-color: rgb(236, 236, 236);
+  grid-area: footer;
+}
+
+#bottom-footer {
+  display: block;
+  padding-left: 20px;
+  float: left;
+  position: relative;
+  bottom: 10px;
+}
+
+#top-footer {
+  display: block;
+  float: left;
+  position: relative;
+  bottom: 10px;
+}
