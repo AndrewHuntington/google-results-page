@@ -2,6 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="shortcut icon" href="https://www.google.com/images/branding/googleg/1x/googleg_standard_color_128dp.png">
@@ -10,32 +11,32 @@
 
   <body>
     <div class="container">
-      <header>
-        <div class="top-right">
-           <a href="#"><img src="./images/google_box.png" alt="apps box"></a>
-           <a href="#"><img src="./images/photo.jpg" alt="pic of me" id="user_pic"></a>
+      <div class="logo">
+        <a href="https://www.google.com" title="Go to Google home"><img id="logo" src="./images/googlelogo.png" alt="google logo" height="30" width="92"></a>
+      </div>
+      <div class="search-area">
+        <form action="index.html" method="post">
+          <input type="text" name="inquiry" id="search-bar" value="build this webpage">
+        </form>
+      </div>
+      <div class="icons">
+         <a href="#" title="Google apps"><img src="./images/google_box.png" alt="apps box" id="apps"></a>
+         <a href="#"><img src="./images/photo.jpg" alt="pic of me" id="user_pic"></a>
+      </div>
+      <!-- <nav>
+        <div class="nav-main">
+          <a href="#"><span id="all">All</span></a>
+          <a href="#">Maps</a>
+          <a href="#">News</a>
+          <a href="#">Videos</a>
+          <a href="#">Images</a>
+          <a href="#">More</a>
         </div>
-        <div class="search-area">
-          <form action="index.html" method="post">
-            <label for="search-bar"><img id="logo" src="./images/googlelogo.png" alt="google logo" height="30" width="92"></label>
-            <input type="text" name="inquiry" id="search-bar" value="build this webpage">
-          </form>
+        <div class="nav-settings">
+          <a href="#">Settings</a>
+          <a href="#">Tools</a>
         </div>
-        <nav>
-          <div class="nav-main">
-            <a href="#"><span id="all">All</span></a>
-            <a href="#">Maps</a>
-            <a href="#">News</a>
-            <a href="#">Videos</a>
-            <a href="#">Images</a>
-            <a href="#">More</a>
-          </div>
-          <div class="nav-settings">
-            <a href="#">Settings</a>
-            <a href="#">Tools</a>
-          </div>
-        </nav>
-      </header>
+      </nav>
       <div class="main">
 
       </div>
@@ -49,7 +50,7 @@
           <a href="#">Privacy</a>
           <a href="#">Terms</a>
         </div>
-      </footer>
+      </footer> -->
     </div>
   </body>
 

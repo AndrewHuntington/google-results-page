@@ -1,37 +1,80 @@
-/* TODO: Add images to search bar ?? */
+* {
+  margin: 0;
+  padding: 0;
+}
 
 body {
-  position: absolute;
-  top: 0;
+  /* position: absolute; */
+  background-color: white;
+  /* top: 0;
   height: 100vh;
   width: 100vw;
   overflow-x: hidden;
-  overflow-y: hidden;
+  overflow-y: hidden; */
 }
 
 .container {
   display: grid;
-  grid-template-areas: "header header"
-                       "main main"
-                       "footer footer";
-  grid-template-rows: 25vh 35vh 25vh;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 11% 54% 35%;
+  grid-template-areas:
+    "logo search-area icons";
 }
 
-header {
-  grid-area: header;
-  border-bottom: 1px solid black;
+/* top row */
+.logo {
+  grid-area: logo;
+  margin: 27px 40px 0px 0px;
 }
 
-.top-right {
-  display: flex;
-  justify-content: flex-end;
-  margin-right: 10px;
+#logo {
+  margin-left: 25px;
+}
+
+.search-area {
+  grid-area: search-area;
+  margin-top: 20px;
+}
+
+#search-bar {
+  border: 1px solid rgb(231, 231, 231);
+  width: 600px;
+  padding: 11px 11px 11px 14px;
+  border-radius: 35px;
+  font-size: 17px;
+  color: black;
+}
+
+#search-bar:hover {
+  box-shadow: 1px -1px 4px rgb(228, 228, 228);
+}
+
+#search-bar:focus {
+  outline-width: 0; /* gets rid of outline when clicked */
+}
+
+.icons {
+  grid-area: icons;
+  justify-self: end;
+  margin: 27px 35px 0px 0px;
   position: relative;
-  top: 15px;
 }
 
-nav {
+.icons #user_pic {
+  bottom: 8px;
+}
+
+#user_pic {
+  border-radius: 25px;
+}
+
+#apps {
+    margin-right: 20px;
+    margin-bottom: 3px;
+}
+
+/* navigation */
+
+/* nav {
   position: relative;
   right: 725px;
   top: 10px;
@@ -58,10 +101,7 @@ a {
   color: rgb(66, 66, 66);
 }
 
-.top-right #user_pic {
-  position: relative;
-  bottom: 8px;
-}
+
 
 a:hover
 {
@@ -75,39 +115,6 @@ a:hover
   grid-area: main;
 }
 
-#user_pic {
-  border-radius: 25px;
-}
-
-#search-bar {
-  display: inline;
-  float: left;
-  position: relative;
-  top: -35px;
-  border: 1px solid rgb(231, 231, 231);
-  width: 700px;
-  margin-left: 20px;
-  padding: 15px;
-  border-radius: 35px;
-  font-size: 20px;
-  color: black;
-}
-
-#search-bar:hover {
-  box-shadow: 1px -1px 4px rgb(228, 228, 228);
-}
-
-#search-bar:focus {
-  outline-width: 0; /* gets rid of outline when clicked */
-}
-
-#logo {
-  display: inline-block;
-  float: left;
-  margin-left: 25px;
-  position: relative;
-  top: -30px;
-}
 
 footer {
   margin-top: -45px;
@@ -132,4 +139,4 @@ footer {
   float: left;
   position: relative;
   bottom: 10px;
-}
+} */
