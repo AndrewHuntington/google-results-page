@@ -12,7 +12,7 @@
 body {
   background-color: white;
   overflow-x: hidden;
-  overflow-y: hidden;
+  overflow-y: scroll;
   font-family: "sans-serif";
 }
 
@@ -188,6 +188,49 @@ a {
   letter-spacing: -0.5px;
 }
 
+/* footer section */
+
+footer {
+  grid-area: footer;
+  display: grid;
+  grid-template-columns: 145px 750px auto;
+  grid-template-rows: 50px 50px;
+  grid-template-areas:
+    "top-l footer-top top-r"
+    "bottom-l footer-bottom bottom-r";
+}
+
+.footer-top {
+  grid-area: footer-top;
+  background-color: grey;
+}
+
+.top-l {
+  grid-area: top-l;
+  background-color: grey;
+}
+
+.top-r {
+  grid-area: top-r;
+  background-color: grey;
+}
+
+.footer-bottom {
+  grid-area: footer-bottom;
+  background-color: grey;
+}
+
+.bottom-l {
+  grid-area: bottom-l;
+  background-color: grey;
+}
+
+.bottom-r {
+  grid-area: bottom-r;
+  background-color: grey;
+}
+
+
 /* multi resolution screen support (not very good!) */
 @supports (display: grid) {
   @media screen and (max-width: 950px) {
@@ -197,7 +240,8 @@ a {
       grid-template-areas:
         "logo search-area"
         "nav-ul-l nav"
-        ". results";
+        ". results"
+        "footer footer";
     }
 
     .icons{
@@ -219,7 +263,8 @@ a {
       grid-template-areas:
         "logo search-area icons"
         "nav-ul-l nav nav-ul-r"
-        ". results .";
+        ". results ."
+        "footer footer footer";
     }
   }
 }
