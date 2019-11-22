@@ -188,8 +188,98 @@ a {
   letter-spacing: -0.5px;
 }
 
-/* footer section */
+.table-grid {
+  border: 1px solid grey;
+  border-radius: 5px;
+  margin-bottom: 2px;
+  display: grid;
+  grid-template-columns: 50%;
+  grid-template-areas:
+    "row-1 row-1"
+    "row-2 r2c2"
+    "row-3 r3c2"
+    "row-4 r4c2"
+    "row-5 r5c2"
+}
 
+.row-1 {
+  grid-area: row-1;
+  font-size: 20px;
+  border-bottom: 1px solid grey;
+  padding: 10px 0px 10px 10px;
+}
+
+.row-2 {
+  grid-area: row-2;
+  font-size: 16px;
+  border-bottom: 1px solid grey;
+  padding: 10px 0px 10px 10px;
+}
+
+.r2c2 {
+  grid-area: r2c2;
+  border-bottom: 1px solid grey;
+  padding: 10px 15px 10px 0px;
+  color: gray;
+  text-align: right;
+}
+
+.row-3 {
+  grid-area: row-3;
+  font-size: 16px;
+  border-bottom: 1px solid grey;
+  padding: 10px 0px 10px 10px;
+}
+
+.r3c2 {
+  grid-area: r3c2;
+  border-bottom: 1px solid grey;
+  padding: 10px 15px 10px 0px;
+  color: gray;
+  text-align: right;
+}
+
+.row-4 {
+  grid-area: row-4;
+  font-size: 16px;
+  border-bottom: 1px solid grey;
+  padding: 10px 0px 10px 10px;
+}
+
+.r4c2 {
+  grid-area: r4c2;
+  border-bottom: 1px solid grey;
+  padding: 10px 15px 10px 0px;
+  color: gray;
+  text-align: right;
+}
+
+.row-5 {
+  grid-area: row-5;
+  font-size: 16px;
+  padding: 10px 0px 10px 10px;
+}
+
+.r5c2 {
+  grid-area: r5c2;
+  padding: 10px 15px 10px 0px;
+  color: gray;
+  text-align: right;
+}
+
+#feedback a {
+  color: grey;
+  font-style: italic;
+  font-size: 12px;
+}
+
+#feedback a p {
+  margin-bottom: 20px;
+  text-align: right;
+}
+
+
+/* footer section */
 footer {
   grid-area: footer;
   display: grid;
@@ -235,6 +325,21 @@ footer {
   grid-area: bottom-r;
   background-color: rgb(232, 232, 232);
 }
+
+/* centering magic----------- */
+.logo-container {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-areas:
+    "img";
+}
+
+img#bottom-logo {
+  grid-area: img;
+  justify-self: center;
+  margin-bottom: 35px;
+}
+/* centering magic----------- */
 
 /* footer text formatting */
 footer a {
