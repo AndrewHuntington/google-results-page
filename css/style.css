@@ -1,7 +1,5 @@
-/*   TODO:
-      Fix "more" icon
-      add icons to search bar
-      impliment a better soution for responsive design
+/*   The code needs some DRYing up, and I did cut corners
+     in some areas, but I want to move on to JavaScript and Ruby.
 */
 
 * {
@@ -14,6 +12,23 @@ body {
   overflow-x: hidden;
   overflow-y: scroll;
   font-family: "sans-serif";
+}
+
+/* bottom table */
+h2#table-head {
+  font-size: 18px;
+  margin-bottom: 25px;
+}
+
+table {
+  margin-bottom: 30px;
+}
+
+td {
+  padding: 0px 20px 10px 0px;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: -0.8px;
 }
 
 /* search area */
@@ -52,7 +67,6 @@ body {
   grid-area: icons;
   justify-self: end;
   margin: 27px 25px 0px 0px;
-  position: relative;
 }
 
 .icons #user_pic {
@@ -64,6 +78,7 @@ body {
 }
 
 #apps {
+    margin-right: 10px;
     margin-bottom: 3px;
 }
 
@@ -148,7 +163,7 @@ a {
 }
 
 #results-text {
-  color: #867a7a;
+  color: rgb(134, 122, 122);
   font-size: 14px;
   padding: 5px 0px 20px 0px;
   line-height: 20px;
