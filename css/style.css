@@ -274,6 +274,10 @@ footer a:hover {
   color: rgb(194, 194, 194);
 }
 
+.fa-circle {
+  margin-left: 10px;
+  color: rgb(132, 123, 123);
+}
 
 /* multi resolution screen support (not very good!) */
 @supports (display: grid) {
