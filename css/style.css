@@ -236,6 +236,44 @@ footer {
   background-color: rgb(232, 232, 232);
 }
 
+/* footer text formatting */
+footer a {
+  color: rgb(132, 123, 123);
+}
+
+footer a:hover {
+  color: rgb(66, 66, 66);
+  text-decoration: none;
+}
+
+.footer-top p {
+  padding-top: 10px;
+}
+
+#country {
+  color: rgb(132, 123, 123);
+  font-size: 16px;
+  letter-spacing: -1px;
+  margin-right: 5px;
+}
+
+#loc {
+  font-weight: 600;
+  letter-spacing: -1px;
+  font-size: 14px;
+  margin-left: 5px;
+}
+
+#details {
+  color: rgb(132, 123, 123);
+  letter-spacing: -1px;
+  font-size: 14px;
+}
+
+#bar {
+  color: rgb(194, 194, 194);
+}
+
 
 /* multi resolution screen support (not very good!) */
 @supports (display: grid) {
