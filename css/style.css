@@ -149,17 +149,18 @@ a {
 
 #results-text {
   color: #867a7a;
-  font-size: 16px;
-  padding: 10px 0px 10px 0px;
+  font-size: 14px;
+  padding: 5px 0px 20px 0px;
   line-height: 20px;
 }
 
 .search-results {
-
+  margin-bottom: 30px;
 }
 
-.search-results h2 {
-  font-size: 20px;
+.search-results h2 a {
+  font-size: 18px;
+  padding: 5px 0;
 }
 
 .search-results h2 a:link {
@@ -170,7 +171,22 @@ a {
   color: purple;
 }
 
+.search-results h3 {
+  color: rgb(4, 109, 3);
+  padding: 5px 0;
+  font-size: 15px;
+}
 
+.search-results p {
+  line-height: 18px;
+  color: rgb(105, 98, 98);
+  font-size: 14px;
+}
+
+.keyword {
+  font-weight: 600;
+  letter-spacing: -0.5px;
+}
 
 /* multi resolution screen support (not very good!) */
 @supports (display: grid) {
