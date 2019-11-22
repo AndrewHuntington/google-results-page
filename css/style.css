@@ -194,40 +194,46 @@ footer {
   grid-area: footer;
   display: grid;
   grid-template-columns: 145px 750px auto;
-  grid-template-rows: 50px 50px;
+  grid-template-rows: 41px 41px;
   grid-template-areas:
     "top-l footer-top top-r"
     "bottom-l footer-bottom bottom-r";
 }
 
 .footer-top {
+  border-top: 1px solid rgb(202, 200, 200);
   grid-area: footer-top;
-  background-color: grey;
+  background-color: rgb(232, 232, 232);
 }
 
 .top-l {
+  border-top: 1px solid rgb(202, 200, 200);
   grid-area: top-l;
-  background-color: grey;
+  background-color: rgb(232, 232, 232);
 }
 
 .top-r {
+  border-top: 1px solid rgb(202, 200, 200);
   grid-area: top-r;
-  background-color: grey;
+  background-color: rgb(232, 232, 232);
 }
 
 .footer-bottom {
+  border-top: 1px solid rgb(202, 200, 200);
   grid-area: footer-bottom;
-  background-color: grey;
+  background-color: rgb(232, 232, 232);
 }
 
 .bottom-l {
+  border-top: 1px solid rgb(202, 200, 200);
   grid-area: bottom-l;
-  background-color: grey;
+  background-color: rgb(232, 232, 232);
 }
 
 .bottom-r {
+  border-top: 1px solid rgb(202, 200, 200);
   grid-area: bottom-r;
-  background-color: grey;
+  background-color: rgb(232, 232, 232);
 }
 
 
