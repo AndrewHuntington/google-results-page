@@ -1,4 +1,4 @@
-# Google Results Clone (Difficult)
+# Google Results Page Clone (Project HTML/CSS - Difficult)
 
 > HTML/CSS Project
 >
